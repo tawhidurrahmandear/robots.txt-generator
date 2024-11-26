@@ -1,2 +1,4 @@
-# robots.txt-Generator
-Generate effective robots.txt files that help ensure Google and other search engines are crawling and indexing your site properly. Generate and upload at the root folder of your website.
+robots.txt Generator <br>
+HTML + JavaScript + CSS <br>
+developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com <br>
+Live Preview available at https://www.devilhunter.net/p/robotstxt-generator.html 
