@@ -1,0 +1,79 @@
+<link rel="stylesheet" type="text/css" href="robots-txt-generator.css">
+
+<!-- robots.txt Generator -->
+<!-- developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com -->
+<!-- Live Preview available at https://www.devilhunter.net/p/robotstxt-generator.html -->
+
+<div style="text-align: justify;"><font face="Trebuchet MS">Generate effective robots.txt files that help ensure Google and other search engines are crawling and indexing your site properly. Generate and upload at the root folder of your website. </font></div>
+<!--more-->
+<br>
+
+  <div class="small_block">
+    <p>By default, all robots are:</p>
+    <p><select id="all_default" class="robots-txt-generator_select">
+      <option value="" selected>allowed</option>
+      <option value="/">refused</option>
+    </select></p>
+  </div>
+
+  <div class="small_block">
+    <p>Specify User-agents (comma-separated) Optional:</p>
+    <p><input id="user_agents" class="robots-txt-generator_input" type="text" placeholder="e.g., Googlebot, Bingbot" /></p>
+  </div>
+
+  <div class="small_block">
+    <p>Crawl delay:</p>
+    <p><select id="crawl_delay" class="robots-txt-generator_select">
+      <option value="0">0 sec.</option>
+      <option value="5">5 sec.</option>
+      <option value="10">10 sec.</option>
+      <option value="20">20 sec.</option>
+      <option value="60">60 sec.</option>
+      <option value="120">120 sec.</option>
+    </select></p>
+  </div>
+
+  <div class="small_block">
+    <p>Enter Sitemap URLs (one per line):</p>
+    <p><textarea id="sitemap" class="robots-txt-generator_textarea" rows="3" placeholder="e.g.,
+https://example.com/sitemap.xml
+https://example.com/news-sitemap.xml"></textarea></p>
+  </div>
+
+  <div>
+    <p>Allowed directories or files:</p>
+    <p><textarea id="allowed_dirs" class="robots-txt-generator_textarea" rows="5" placeholder="One path per line. For example,
+/public/
+/images/
+"></textarea></p>
+  </div>
+
+  <div>
+    <p>Restricted directories or files:</p>
+    <p><textarea id="restricted_dirs" class="robots-txt-generator_textarea" rows="5" placeholder="One path per line. For example:
+/admin/
+/private/
+/tmp/
+"></textarea></p>
+  </div>
+
+  <div>
+    <p>Block specific query strings:</p>
+    <p><textarea id="blocked_queries" class="robots-txt-generator_textarea" rows="3" placeholder="e.g., ?utm_source="></textarea></p>
+  </div>
+
+  <div class="small_block">
+    <p>Specify the preferred host (optional):</p>
+    <p><input id="host" class="robots-txt-generator_input" type="text" placeholder="e.g., www.example.com" /></p>
+  </div>
+<br><br>
+  <p>
+    <button id="generate_btn" class="robots-txt-generator_button">Generate robots.txt</button>
+    <button id="download_btn" class="robots-txt-generator_button">Download robots.txt</button>
+  </p>
+<br>
+  <p>Your robots.txt:</p>
+  <textarea id="result" class="robots-txt-generator_textarea" readonly rows="10" spellcheck="false"></textarea>
+
+
+<script src="robots-txt-generator.js"></script>
